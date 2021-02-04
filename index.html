@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo UX</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+   
+    <style>
+        
+        /* reset de propriedades/página */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            /* width e height referencia a borda */
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            color: grey;
+        }
+        /* CABEÇALHO  */
+        
+        #cabecalho {
+            padding-left: 10%;
+            padding-right: 10%;
+            /* margin-bottom: 20px; */
+            background-color: #727272;
+            background-image: linear-gradient( to right, #727272, grey);
+        }
+        
+        h1 {
+            display: inline-block;
+            margin-right: -4px;
+            vertical-align: middle;
+            width: 20%;
+            box-sizing: border-box;
+            color: white;
+            /* font-family: 'Indie Flower', cursive; */
+            font-weight: 100;
+            /* border: 3px solid red; */
+        }
+        
+        h1 span {
+            
+            font-weight: 800;
+            font-family: cursive ;
+        }
+        
+        #menu {
+            display: inline-block;
+            margin-right: -4px;
+            vertical-align: middle;
+            width: 80%;
+            box-sizing: border-box;
+            text-align: right;
+            /* border: 3px solid red; */
+        }
+
+        #menu a:hover{
+            background-color: #9b9b9b ;
+        }
+        
+        #menu a {
+            /* retirar os espaços do inline-block */
+            margin-right: -4px;
+            /* colocar os 4 padding - top/bottom  right/left */
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-right: 20px;
+            padding-left: 20px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            /* border: 1px solid white; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: background-color 1s;
+        }
+        
+        #container {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 20px;
+            background-color:  #efefef;
+            ;
+        }
+        /* CONTEÚDO  */
+        
+        #conteudo {
+            display: inline-block;
+            margin-right: -4px;
+            vertical-align: top;
+            width: 70%;
+            /* border: 1px solid salmon; */
+            background-color: white;
+        }
+        
+        #conteudo img {
+            width: 100%;
+        }
+        
+        #conteudo h2,
+        #conteudo p {
+            /* border: 1px solid red; */
+            margin-top: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        }
+
+        #busca{
+            padding-bottom: 15px;
+            padding-top: 15px;
+            /* border: 1px solid red; */
+            
+        }
+        #busca h2{
+            border-bottom: 1px solid  #e6e6e6;
+            margin-bottom: 15px;
+            text-align: center;
+            
+        }
+
+        #lateral div{
+            background-color: white;
+            margin-bottom: 15px;
+        }
+        
+        /* BARRA LATERAL  */
+        
+        #lateral {
+            display: inline-block;
+            margin-right: -4px;
+            vertical-align: top;
+            width: 29%;
+            margin-left: 1%;
+            /* border: 1px solid slateblue; */
+        }
+        #busca button{
+            margin-left: 10px;
+            border: 1px solid   #e6e6e6;
+            /* height: 35px; */
+            padding: 10px;
+            background-color: gray;
+            
+            
+            
+        
+        }
+        #busca button i{
+            color: white;
+            font-size: 15px;
+
+        }
+
+        #busca input{
+            margin-left: 15px;
+            height: 35px;
+            width: 70%;
+            border: 1px solid  #e6e6e6;
+        }
+        #post-anteriores ul{
+           
+            margin-left: 45px;
+            margin-right: 35px;
+            
+        }
+        #post-anteriores h2{
+            padding-top: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid  #e6e6e6;
+            /* font-size: ; */
+        }
+        #post-anteriores{
+            padding-bottom: 15px;
+            
+        }
+        #inscricao{
+            text-align: center;
+         
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        #inscricao input{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            border: 1px solid  #e6e6e6;
+            height: 35px;
+
+        }
+        #inscricao h2{
+            text-align: center;
+            border-bottom: 1px solid   #e6e6e6;
+            margin-bottom: 15px;
+        }
+        #inscricao p{
+            text-align: center;
+            margin-right: 15px;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cabecalho">
+        <h1>Estilo<span>UX</span></h1>
+
+        <div id="menu">
+            <a href="#">home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </div>
+    </div>
+
+
+    <div id="container">
+        <div id="conteudo">
+            <img src="imagens/lapis.png" alt="">
+
+            <h2>Cores com harmonia</h2>
+
+            <p>Entenda como fazer combinações de cores que fazem sentido para sua identidade visual</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti amet nostrum libero reiciendis velit qui minima, corrupti sed facere illo enim aliquid nihil quaerat, ducimus, laborum consequuntur inventore? Architecto? Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Molestias neque, blanditiis quam quisquam nam accusantium, velit non amet voluptate beatae, nostrum perspiciatis laboriosam ullam ipsum aliquam quas itaque cum dolorum.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda maxime tempora quos, ea sequi praesentium! Fugit sint totam iusto blanditiis esse animi doloribus delectus distinctio quos, tempore molestiae reprehenderit odio!</p>
+        </div>
+
+        <div id="lateral">
+
+            <div id="busca">
+                <h2>Busca</h2>
+                <input type="text">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div id="post-anteriores">
+                <h2>Posts Anteriores</h2>
+                <ul>
+                    <li>Dicas para melhorar a <br> usabilidade da sua página</li>
+                    <li>Como identificar erros em <br> uma composição visual</li>
+                    <li>Cores com harmonia</li>
+                    <li>7 Hacks e dicas do <br> Illustrator que você precisa <br> conhecer</li>
+                </ul>
+            </div>
+
+            <div id="inscricao">
+                <h2>Inscreva-se</h2>
+                <p>Receba as novidades do site em seu email! Basta adicionar seu email abaixo!</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
